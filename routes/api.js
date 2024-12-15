@@ -4,6 +4,11 @@ const router = express.Router();
 const username = '86800014717510000';
 const password='Ozun2309';
 
+
+app.get('/get', (req, res) => {
+    res.send('Hello World from api!');
+});
+
 // POST route to send username and password
 router.post('/login', async (req, res) => {
     const { username, password } = req.body;
