@@ -8,20 +8,28 @@ const password='Ozun2309';
 router.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
+    console.log('Received /login request:', { username });
+
     try {
+        // Log before calling the function
+        console.log('Calling fetchToken with:', { username, password });
+
         const data = await fetchToken(username, password); // Call the function
+
+        // Log after receiving data
+        console.log('fetchToken response:', data);
+
         res.json(data); // Send the response data back to the client
     } catch (error) {
-        // Handle errors
-        console.log(error.message)
-        res.status(error.status).json({ message: error.message });
+        console.error(`[${new Date().toISOString()}] Error during /login request:`, error);
+        res.status(error.status || 500).json({ message: error.message || 'Internal Server Error' });
     }
 });
 
 // New route to handle the specified JSON structure
 router.post('/verify', async (req, res) => {
     const { fr, dt, productList } = req.body;
-
+    res.set('Access-Control-Allow-Origin', 'http://localhost:4200');
     // Check if required fields are provided
     if (!fr || !productList || !Array.isArray(productList)) {
         return res.status(400).json({ message: 'Invalid input' });

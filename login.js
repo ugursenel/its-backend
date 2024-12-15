@@ -3,7 +3,7 @@ const axios = require('axios');
 // Function to handle the API request
 const login = async (username, password) => {
     try {
-        const response = await axios.post('https://itstest2.saglik.gov.tr/token/app/token/', {
+        const response = await axios.post('https://its2.saglik.gov.tr/token/app/token/', {
             username: username,
             password: password,
         });

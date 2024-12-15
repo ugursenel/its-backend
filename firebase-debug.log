@@ -1,0 +1,151 @@
+[debug] [2024-11-23T17:15:31.685Z] ----------------------------------------------------------------------
+[debug] [2024-11-23T17:15:31.687Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\uur_s\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-11-23T17:15:31.687Z] CLI Version:   13.27.0
+[debug] [2024-11-23T17:15:31.687Z] Platform:      win32
+[debug] [2024-11-23T17:15:31.687Z] Node Version:  v20.17.0
+[debug] [2024-11-23T17:15:31.687Z] Time:          Sat Nov 23 2024 20:15:31 GMT+0300 (GMT+03:00)
+[debug] [2024-11-23T17:15:31.687Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-23T17:15:31.730Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-23T17:15:31.730Z] > authorizing via signed-in user (uursenel@gmail.com)
+[debug] [2024-11-23T17:15:31.730Z] [iam] checking project itsservice-da6f7 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-23T17:15:31.731Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:31.731Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:31.732Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/itsservice-da6f7:testIamPermissions [none]
+[debug] [2024-11-23T17:15:31.732Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/itsservice-da6f7:testIamPermissions x-goog-quota-user=projects/itsservice-da6f7
+[debug] [2024-11-23T17:15:31.732Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/itsservice-da6f7:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-23T17:15:32.684Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/itsservice-da6f7:testIamPermissions 200
+[debug] [2024-11-23T17:15:32.684Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/itsservice-da6f7:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-23T17:15:32.684Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:32.684Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:32.684Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/itsservice-da6f7/serviceAccounts/itsservice-da6f7@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-11-23T17:15:32.684Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/itsservice-da6f7/serviceAccounts/itsservice-da6f7@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-11-23T17:15:33.679Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/itsservice-da6f7/serviceAccounts/itsservice-da6f7@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2024-11-23T17:15:33.679Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/itsservice-da6f7/serviceAccounts/itsservice-da6f7@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-11-23T17:15:33.680Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:33.680Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:33.681Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/itsservice-da6f7 [none]
+[debug] [2024-11-23T17:15:34.083Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/itsservice-da6f7 200
+[debug] [2024-11-23T17:15:34.084Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/itsservice-da6f7 {"projectId":"itsservice-da6f7","projectNumber":"57872096441","displayName":"itsservice","name":"projects/itsservice-da6f7","resources":{"hostingSite":"itsservice-da6f7","realtimeDatabaseInstance":"itsservice-da6f7-default-rtdb","storageBucket":"itsservice-da6f7.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_fc1eb34a-6444-4891-9f54-29aa6fdff525"}
+[info] 
+[info] === Deploying to 'itsservice-da6f7'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2024-11-23T17:15:34.088Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:34.088Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:34.088Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/itsservice-da6f7 [none]
+[debug] [2024-11-23T17:15:34.320Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/itsservice-da6f7 200
+[debug] [2024-11-23T17:15:34.321Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/itsservice-da6f7 {"projectNumber":"57872096441","projectId":"itsservice-da6f7","lifecycleState":"ACTIVE","name":"itsservice","labels":{"firebase":"enabled"},"createTime":"2024-10-25T07:57:16.501905Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2024-11-23T17:15:34.323Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:34.323Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:34.324Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:34.324Z] Checked if tokens are valid: true, expires at: 1732384411409
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2024-11-23T17:15:34.325Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:34.325Z] Checked if tokens are valid: true, expires at: 1732384411409
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-11-23T17:15:34.325Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:34.326Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:34.326Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-11-23T17:15:34.326Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/itsservice-da6f7
+[debug] [2024-11-23T17:15:34.327Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-11-23T17:15:34.327Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/itsservice-da6f7
+[debug] [2024-11-23T17:15:34.328Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/cloudbuild.googleapis.com [none]
+[debug] [2024-11-23T17:15:34.328Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/cloudbuild.googleapis.com x-goog-quota-user=projects/itsservice-da6f7
+[debug] [2024-11-23T17:15:34.329Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/artifactregistry.googleapis.com [none]
+[debug] [2024-11-23T17:15:34.330Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/artifactregistry.googleapis.com x-goog-quota-user=projects/itsservice-da6f7
+[debug] [2024-11-23T17:15:34.982Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/cloudfunctions.googleapis.com 200
+[debug] [2024-11-23T17:15:34.982Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-11-23T17:15:35.490Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/runtimeconfig.googleapis.com 200
+[debug] [2024-11-23T17:15:35.491Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-11-23T17:15:35.517Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/cloudbuild.googleapis.com 200
+[debug] [2024-11-23T17:15:35.517Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-11-23T17:15:35.520Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/artifactregistry.googleapis.com 200
+[debug] [2024-11-23T17:15:35.521Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/itsservice-da6f7/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-11-23T17:15:35.521Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:35.521Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:35.521Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/itsservice-da6f7/adminSdkConfig [none]
+[debug] [2024-11-23T17:15:36.152Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/itsservice-da6f7/adminSdkConfig 200
+[debug] [2024-11-23T17:15:36.152Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/itsservice-da6f7/adminSdkConfig {"projectId":"itsservice-da6f7","databaseURL":"https://itsservice-da6f7-default-rtdb.firebaseio.com","storageBucket":"itsservice-da6f7.appspot.com","locationId":"us-central"}
+[debug] [2024-11-23T17:15:36.153Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:36.153Z] Checked if tokens are valid: true, expires at: 1732384411409
+[debug] [2024-11-23T17:15:36.153Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/itsservice-da6f7/configs [none]
+[debug] [2024-11-23T17:15:36.564Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/itsservice-da6f7/configs 200
+[debug] [2024-11-23T17:15:36.564Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/itsservice-da6f7/configs {}
+[debug] [2024-11-23T17:15:36.565Z] Validating nodejs source
+[debug] [2024-11-23T17:15:37.379Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.21.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-11-23T17:15:37.379Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2024-11-23T17:15:37.380Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-11-23T17:15:37.384Z] Found firebase-functions binary at 'D:\projects\its-backend\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8772
+
+[error] node:events:497
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8772
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at Server.listen (node:net:2063:7)
+    at Function.listen (D:\projects\its-backend\functions\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\projects\its-backend\functions\index.js:23:5)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1940:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8772
+}
+
+Node.js v20.17.0
+
+[debug] [2024-11-23T17:15:37.739Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8772/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8772/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2024-11-23T17:15:37.912Z] FetchError: request to http://127.0.0.1:8772/__/functions.yaml failed, reason: read ECONNRESET
+    at ClientRequest.<anonymous> (C:\Users\uur_s\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:519:28)
+    at ClientRequest.emit (node:domain:488:12)
+    at emitErrorEvent (node:_http_client:108:11)
+    at Socket.socketErrorListener (node:_http_client:511:5)
+    at Socket.emit (node:events:519:28)
+    at Socket.emit (node:domain:488:12)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
